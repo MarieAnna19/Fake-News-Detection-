@@ -446,7 +446,7 @@ def check_article_page():
         # Classification based on score
         st.markdown("### Interpretation")
         if score < 0.3:
-            st.error("This article appears to be highly unreliable and likely contains misinformation.")
+            st.error("This article appears to be highly unreliable and likely contains fake information.")
         elif score < 0.6:
             st.warning("This article contains some questionable elements. Verify with other sources.")
         else:
