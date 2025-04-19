@@ -380,7 +380,7 @@ def apply_custom_css():
     """, unsafe_allow_html=True)
 
 # Logo display function
-def display_logo(width=1000):
+def display_logo(width=500):
     logo_path = "logo.png"
     
     if os.path.exists(logo_path):
