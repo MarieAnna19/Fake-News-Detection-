@@ -380,7 +380,7 @@ def apply_custom_css():
     """, unsafe_allow_html=True)
 
 # Logo display function
-def display_logo(width=250):
+def display_logo(width=1000):
     logo_path = "logo.png"
     
     if os.path.exists(logo_path):
@@ -512,7 +512,7 @@ def login_signup_page():
                     else:
                         st.error("Username already exists")
                 else:
-                    st.error("Passwords do not match")
+                    st.error("Password do not match")
             else:
                 st.warning("Please fill in all fields")
     st.markdown('</div>', unsafe_allow_html=True)
